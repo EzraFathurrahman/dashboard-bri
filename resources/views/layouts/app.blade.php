@@ -12,34 +12,25 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased ">
         <x-jet-banner />
 
-        <div class="bg-gray-100">
-            <div class="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4">
-                @livewire('navigation-menu')
-            </div>
-
-            <!-- Page Heading -->
-            @if (!isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-100 ">
+                <div class="flex ">
+                    <x-sidebar-menu class="w-64" />
+                    <div class="bg-white h-full shadow w-full x-auto py-6 px-6 sm:px-6 lg:px-8 ">
                         {{ $header }}
+                        {{ $slot }}
                     </div>
-                </header>
-            @endif
-
-            <!-- Page Content -->
-            <main>
-                {{-- {{ $slot }} --}}
-            </main>
+                </div>
         </div>
-
         @stack('modals')
+        @stack('custom-scripts')
 
         @livewireScripts
     </body>

@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="flex-1 space-y-1 bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="flex flex-col align-start  align-middle bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-shrink-0 items-center justify-between h-16">
@@ -18,12 +18,12 @@
                 </div>
                 <div class=" space-x-8 sm:-my-px sm:ml-10 flex">
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Bukan Dashboard') }}
                     </x-jet-nav-link>
                 </div>
                 <div class=" space-x-8 sm:-my-px sm:ml-10 flex">
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('LOL') }}
                     </x-jet-nav-link>
                 </div>
             </div>
