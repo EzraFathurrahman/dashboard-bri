@@ -13,6 +13,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <!-- Styles -->
         @livewireStyles
@@ -33,5 +34,6 @@
         @stack('custom-scripts')
 
         @livewireScripts
+        @livewire('livewire-ui-modal')
     </body>
 </html>
