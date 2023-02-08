@@ -24,7 +24,7 @@
           
       <div 
         x-data="{
-          openTab: 1,
+          openTab: 2,
           activeClasses: 'bg-white font-bold text-black-700',
           inactiveClasses: 'bg-gray-200 font-semibold text-gray-400 hover:text-gray-700 '
         }" 
