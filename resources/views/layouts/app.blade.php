@@ -35,7 +35,7 @@
         @stack('custom-scripts')
 
         @livewireScripts
-        @livewire('livewire-ui-modal')
+        
         <livewire:edit-agenda/>
         <script>
             window.livewire.on('close', event => {
