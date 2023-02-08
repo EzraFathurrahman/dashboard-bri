@@ -27,6 +27,7 @@
                     <div class="bg-white h-full shadow w-full x-auto py-6 px-6 sm:px-6 lg:px-8 ">
                         {{ $header }}
                         {{ $slot }}
+                        
                     </div>
                 </div>
         </div>
@@ -35,5 +36,11 @@
 
         @livewireScripts
         @livewire('livewire-ui-modal')
+        <livewire:edit-agenda/>
+        <script>
+            window.livewire.on('close', event => {
+                $('#modalForm').modal('hide');
+                })
+            </script>
     </body>
 </html>

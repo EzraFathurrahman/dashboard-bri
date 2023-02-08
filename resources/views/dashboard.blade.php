@@ -29,5 +29,6 @@ Pellentesque augue libero, tristique vitae fringilla ut, sollicitudin eu ante. I
 In eu ultrices dui. Phasellus imperdiet a dui quis consequat. Duis id tortor sapien. Vestibulum id tincidunt orci. Aliquam erat volutpat. Sed a lobortis arcu. Vestibulum dapibus dapibus vulputate. Phasellus lacinia a massa eu luctus. Ut feugiat ex vel eros scelerisque scelerisque. Maecenas molestie lacus ut dictum sodales. Suspendisse ac sapien ut nunc auctor tristique nec malesuada dui. Quisque ornare velit id erat tristique ultrices. Morbi eros nisi, ullamcorper et placerat id, eleifend eu leo.
 
         </div>
+        
     </div>
 </x-app-layout>
