@@ -23,18 +23,18 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('menus.dashboard');
     })->name('dashboard');
     Route::get('/projects', function () {
-        return view('projects');
+        return view('menus.projects');
     })->name('projects');
     Route::get('/calendar', function () {
-        return view('calendar');
+        return view('menus.calendar');
     })->name('calendar');
     Route::get('/documents', function () {
-        return view('documents');
+        return view('menus.documents');
     })->name('documents');
     Route::get('/reports', function () {
-        return view('reports');
+        return view('menus.reports');
     })->name('reports');
 });
