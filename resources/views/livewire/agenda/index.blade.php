@@ -142,7 +142,7 @@
                     </button>
                 </div>
         
-                <div class="w-full pt-4">
+                <div class=" h-[32rem] w-full pt-4 overflow-auto scrollbar scrollbar-thumb-indigo-900 scrollbar-track-grey-100">
                     <div x-show="openTab === 1">
                         @livewire('agenda.yesterday')
                     </div>
