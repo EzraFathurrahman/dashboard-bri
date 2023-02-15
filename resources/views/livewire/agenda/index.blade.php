@@ -6,7 +6,7 @@
         </h1>
     </div>
     <div>
-      <button type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Export</button>
+      <button type="button" class="hidden inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Export</button>
       <button wire:click="$set('openModal',true)" type="button" class="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Tambah Agenda</button>
         <x-jet-dialog-modal wire:model="openModal">
             <x-slot name="title">
@@ -156,3 +156,27 @@
         </div>
     </div>
 </div>
+
+<script>
+$(function() {
+    down();
+    
+    function up() {
+        setTimeout(function() {
+            scroll(0, down);
+        }, 2);
+    }
+
+    function down() {
+        setTimeout(function() {
+            scroll($(document).height(), up);
+        }, 2)
+    }
+
+    function scroll(pos, callback) {
+        $('.scrollbar').animate({
+            scrollTop: pos
+        }, 4000, callback);
+    }
+})
+</script>

@@ -7,6 +7,12 @@ use Illuminate\View\View;
 
 class AppLayout extends Component
 {
+    
+    public $show = false;
+    public function ye()
+    {
+        $this->show = true;
+    }
     /**
      * Get the view / contents that represents the component.
      */
