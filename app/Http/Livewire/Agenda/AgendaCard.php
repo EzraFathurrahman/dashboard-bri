@@ -9,6 +9,7 @@ class AgendaCard extends Component
     public $title;
     public $pic;
     public $waktu;
+    public $offline;
     public $loc_offline;
 
     public $setcol = 'gray-500';
@@ -17,7 +18,8 @@ class AgendaCard extends Component
         $this->title = $agenda->title;
         $this->pic = $agenda->pic;
         $this->waktu = $agenda->waktu;
-        $this->loc_offline = $agenda->loc_offline;
+        $this->offline = $agenda->offline;
+        $this->loc_offline = $agenda->lokasi_offline;
     }
     public function render()
     {

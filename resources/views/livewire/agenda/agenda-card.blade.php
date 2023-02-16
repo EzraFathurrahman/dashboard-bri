@@ -1,6 +1,10 @@
-<a href="#" class="group flex flex-col rounded-lg bg-pink-50 p-3 text-xs hover:bg-pink-100">
-    <p class="font-semibold text-3xl text-pink-700">{{$title}}</p>
-    <p class="text-pink-500 text-xl group-hover:text-pink-700" >{{$pic}}</p>
-    <p class="text-pink-500 text-xl group-hover:text-pink-700">{{date('j F Y', strtotime( $waktu))}}</p>
-    <p class="text-pink-500 text-xl group-hover:text-pink-700">{{$loc_offline}}</p>
+<a href="#" class="group flex flex-col rounded-lg bg-sky-50 p-3 text-xs hover:bg-sky-100">
+    <p class="font-bold text-3xl text-sky-700">{{$title}}</p>
+    <p class="font-semibold  text-sky-500 text-xl group-hover:text-sky-700" >{{$pic}}</p>
+    <p class="text-sky-500 text-xl group-hover:text-sky-700">{{date('j F Y', strtotime( $waktu))}}</p>
+    @if($offline)
+        <p class="text-sky-500 text-xl group-hover:text-sky-700">Offline : {{$loc_offline}}</p>
+    @else
+        <p class="text-sky-500 text-xl group-hover:text-sky-700">Online</p>
+    @endif
 </a>

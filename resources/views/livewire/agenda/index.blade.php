@@ -46,7 +46,7 @@
                             <div x-show="offline" class="pt-4">
                                 <label for="agenda" class="block text-sm font-medium text-gray-700">Lokasi Offline</label>
                                 <div class="mt-1">
-                                    <input wire:model="loc_offline" placeholder="Masukan lantai, divisi, alamat, atau kosongkan saja" type="text" name="agenda" id="agenda" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" >
+                                    <input wire:model="lokasi_offline" placeholder="Masukan lantai, divisi, alamat, atau kosongkan saja" type="text" name="agenda" id="agenda" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" >
                                 </div>
                             </div>
                         </fieldset>
@@ -142,7 +142,7 @@
                     </button>
                 </div>
         
-                <div class=" h-[32rem] w-full pt-4 overflow-auto scrollbar scrollbar-thumb-indigo-900 scrollbar-track-grey-100">
+                <div class="h-[40rem] w-full pt-4 overflow-auto scrollbar scrollbar-thumb-indigo-900 scrollbar-track-grey-100">
                     <div x-show="openTab === 1">
                         @livewire('agenda.yesterday')
                     </div>
@@ -164,13 +164,13 @@ $(function() {
     function up() {
         setTimeout(function() {
             scroll(0, down);
-        }, 2);
+        }, 4);
     }
 
     function down() {
         setTimeout(function() {
             scroll($(document).height(), up);
-        }, 2)
+        }, 10)
     }
 
     function scroll(pos, callback) {

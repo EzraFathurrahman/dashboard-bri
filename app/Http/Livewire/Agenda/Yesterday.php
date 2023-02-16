@@ -11,7 +11,7 @@ class Yesterday extends Component
     public function render()
     {
         return view('livewire.agenda.yesterday', [
-            'agendas' => Agenda::whereDate("waktu","<",Carbon::today())->get(),
+            'agendas' => Agenda::whereDate("waktu",Carbon::yesterday())->get(),
         ]);
     }   
 }
