@@ -22,7 +22,7 @@
     <body class="font-sans antialiased ">
         <x-jet-banner />
 
-        <div class="bg-gray-100" x-data="{ open: false }">
+        <div class="bg-gray-100" x-data="{ open: true }">
             <div class="flex">
                 <div x-show="open">
                     <x-sidebar-menu class="w-64" />
