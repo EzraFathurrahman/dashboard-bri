@@ -164,7 +164,7 @@ $(function() {
     function up() {
         setTimeout(function() {
             scroll(0, down);
-        }, 4);
+        }, 10);
     }
 
     function down() {

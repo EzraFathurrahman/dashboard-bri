@@ -1,5 +1,5 @@
 <div class=" w-64 h-screen sticky top-0">
-  <div class="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-[#1D3E67] pt-5 pb-4 h-full sticky">
+  <div class="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-[#1D3E67] pt-5 h-full sticky">
     <div class="flex flex-shrink-0 items-center px-4">
         <svg width="125" height="45" viewBox="0 0 125 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_89_193)">
@@ -93,6 +93,9 @@
         </div> --}}
 
       </nav>
+    </div>
+    <div class="p-2 text-white font-sm">
+      “Capable Inspire Trustworthy”
     </div>
   </div>  
 </div>
