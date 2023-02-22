@@ -94,8 +94,11 @@
 
       </nav>
     </div>
-    <div class="p-2 text-white font-sm">
-      “Capable Inspire Trustworthy”
+    <div class="bg-white rounded scale-90 p-2">
+      <img src="{{ asset('img/akhlak.png') }}" alt="Kemdikbud">
+    </div>
+    <div class="p-2 text-white font-sm text-center">
+      Capable Inspire Trustworthy
     </div>
   </div>  
 </div>

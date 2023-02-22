@@ -12,7 +12,6 @@ class AgendaCard extends Component
     public $offline;
     public $loc_offline;
 
-    public $setcol = 'gray-500';
      public function mount($agenda)
     {
         $this->title = $agenda->title;

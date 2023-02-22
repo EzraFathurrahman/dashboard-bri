@@ -5,12 +5,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        
         <title>{{ config('app.name', 'Laravel') }}</title>
-
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
-
+        
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -19,17 +19,26 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="font-sans antialiased ">
-        <x-jet-banner />
+    <body class="font-sans antialiased" x-data="{ open: true }" :class="open ? '' : 'overflow-hidden'" >
+        {{-- <x-jet-banner /> --}}
+        {{-- <div id="myModal" class="fixed  bg-black/[.09] z-50 left-0 top-0 w-full h-full overflow-auto">
 
-        <div class="bg-gray-100" x-data="{ open: true }">
-            <div class="flex">
+            <div class="bg-black block">
+                <p>suhfshdfishdf</p>
+            </div>
+
+        </div> --}}
+        <div class="bg-gray-100" >
+            <div class="flex" :class="open ? '' : 'overflow-hidden"> 
                 <div x-show="open">
                     <x-sidebar-menu class="w-64" />
                 </div>
-                <div class="bg-white h-full shadow w-full x-auto py-6 px-6 sm:px-6 lg:px-8 ">
+                <div class="bg-white h-full shadow w-full x-auto py-6 px-6 sm:px-6 lg:px-8" -hidden'">
                     {{ $header }}
                     {{ $slot }}
+                    <marquee class="pt-4"  direction="left" height="100px">
+                    This is a sample scrolling text that has scrolls texts to left.
+                    </marquee>
                 </div>
             </div>
             <div class="m-4 fixed bottom-0 right-0">
@@ -43,9 +52,31 @@
                 </button>
             </div>
         </div>
+        {{-- <script>
+            function openPopup() {
+                myModal.style.display = "block";
+            }
+
+            function closePopup() {
+                myModal.style.display = "none";
+            }
+
+            document.getElementById("myModal").onclick = function(){ closePopup() }
+
+            setInterval(function() {
+                openPopup();
+                setTimeout(function() {
+                    closePopup();
+                }, 30000);
+                // 30000
+            }, 60000 * 15);
+            // 60000 * 15
+        </script> --}}
         @stack('modals')
         @stack('custom-scripts')
 
         @livewireScripts
+        
     </body>
 </html>
+

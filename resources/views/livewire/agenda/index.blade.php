@@ -8,7 +8,7 @@
     <div>
       <button type="button" class="hidden inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Export</button>
       <button wire:click="$set('openModal',true)" type="button" class="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Tambah Agenda</button>
-        <x-jet-dialog-modal wire:model="openModal">
+<x-jet-dialog-modal wire:model="openModal">
             <x-slot name="title">
                 Tambah Agenda
             </x-slot>
@@ -114,9 +114,9 @@
                     Tambah
                 </x-jet-button>
             </x-slot>
-        </x-jet-dialog-modal>
-        </div>
-        </div>
+        </x-jet-dialog-modal>        
+    </div>
+</div>
 
     <div class="py-3">
         <div class="bg-white overflow-hidden sm:rounded-lg drop-shadow-md max-w-7xl mx-auto border-emerald-300">
@@ -142,7 +142,7 @@
                     </button>
                 </div>
         
-                <div class="h-[40rem] w-full pt-4 overflow-auto scrollbar scrollbar-thumb-indigo-900 scrollbar-track-grey-100">
+                <div class="h-[39rem] w-full pt-4 overflow-auto scrollbar scrollbar-thumb-indigo-900 scrollbar-track-grey-100">
                     <div x-show="openTab === 1">
                         @livewire('agenda.yesterday')
                     </div>
@@ -176,7 +176,7 @@ $(function() {
     function scroll(pos, callback) {
         $('.scrollbar').animate({
             scrollTop: pos
-        }, 4000, callback);
+        }, 10000, callback);
     }
 })
 </script>
