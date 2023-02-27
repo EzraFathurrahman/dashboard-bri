@@ -20,7 +20,7 @@
     </div>
     <div class="mt-5 flex flex-grow flex-col">
       <nav class="flex-1 space-y-1 bg-[#1D3E67] px-2" aria-label="Sidebar">
-        <div>
+        {{-- <div>
           <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
             <x-slot:svg>
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -35,7 +35,7 @@
             </x-slot>
             {{ __('Projects') }}
           </x-nav-link>
-        </div>
+        </div> --}}
         <div>
           <x-nav-link href="{{ route('calendar') }}" :active="request()->routeIs('calendar')">
             <x-slot:svg>
@@ -45,7 +45,7 @@
           </x-nav-link>
         </div>
         
-        <div>
+        {{-- <div>
           <x-nav-link href="{{ route('documents') }}" :active="request()->routeIs('documents')">
             <x-slot:svg>
               <path d="M17 10V3C17 1.89543 16.1046 1 15 1H3C1.89543 1 1 1.89543 1 3V10M17 10V15C17 16.1046 16.1046 17 15 17H3C1.89543 17 1 16.1046 1 15V10M17 10H14.4142C14.149 10 13.8946 10.1054 13.7071 10.2929L11.2929 12.7071C11.1054 12.8946 10.851 13 10.5858 13H7.41421C7.149 13 6.89464 12.8946 6.70711 12.7071L4.29289 10.2929C4.10536 10.1054 3.851 10 3.58579 10H1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -62,7 +62,7 @@
             {{ __('Reports') }}
           </x-nav-link>
         </div>
-         
+          --}}
         {{-- <div x-data="{ expanded: false,current:false }" class="space-y-1">
           <!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
           <button 

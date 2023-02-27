@@ -37,7 +37,7 @@
                     {{ $header }}
                     {{ $slot }}
                     <marquee class="pt-4"  direction="left" height="100px">
-                    This is a sample scrolling text that has scrolls texts to left.
+                        ------- Hanya ada satu negara yang pantas menjadi negaraku. Ia tumbuh dengan perbuatan dan perbuatan itu adalah perbuatanku. ------- Orang yang memimpikan kesuksesan atau orang yang membuatnya menjadi kenyataan? ------- Kesempatan kamu untuk sukses di setiap kondisi selalu dapat diukur oleh seberapa besar kepercayaan kamu pada diri sendiri. ------- Suatu pekerjaan yang paling tak kunjung bisa diselesaikan adalah pekerjaan yang tak kunjung pernah dimulai. ------- Dunia tak lagi sama tak selamanya memihak kita, di saat kita mau berusaha di situlah kebahagiaan akan indah pada waktunya.  -------
                     </marquee>
                 </div>
             </div>

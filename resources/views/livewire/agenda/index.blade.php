@@ -50,6 +50,7 @@
                                 </div>
                             </div>
                         </fieldset>
+                        @error('offline') <span class="error">{{ $message }}</span> @enderror
                     </div>
                     <div>
                         <label class="text-base font-medium text-gray-900">Waktu</label>
@@ -101,6 +102,7 @@
                             </div>
                             </div>
                         </fieldset>
+                        @error('is_tanggal') <span class="error">{{ $message }}</span> @enderror
                     </div>
                 </div>
             </x-slot>

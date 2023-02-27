@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
+    return view('menus.calendar');
+});
+
+Route::get('/dashboard', function () {
     return view('menus.dashboard');
 })->name('dashboard');
 Route::get('/projects', function () {
