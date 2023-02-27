@@ -166,7 +166,7 @@ $(function() {
     function up() {
         setTimeout(function() {
             scroll(0, down);
-        }, 10);
+        }, 7);
     }
 
     function down() {
