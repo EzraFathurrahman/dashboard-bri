@@ -11,7 +11,7 @@ class Today extends Component
     public function render()
     {
         return view('livewire.agenda.today', [
-            'agendas' => Agenda::whereDate("waktu",Carbon::today())->get(),
+            'agendas' => Agenda::whereDate("waktu", Carbon::today())->get(),
         ]);
     }
 }

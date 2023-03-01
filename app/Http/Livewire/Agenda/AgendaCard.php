@@ -12,7 +12,7 @@ class AgendaCard extends Component
     public $offline;
     public $loc_offline;
 
-     public function mount($agenda)
+    public function mount($agenda)
     {
         $this->title = $agenda->title;
         $this->pic = $agenda->pic;
