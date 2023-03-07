@@ -11,6 +11,7 @@ class AgendaCard extends Component
     public $waktu;
     public $offline;
     public $loc_offline;
+    public $showDate;
 
     public function mount($agenda)
     {

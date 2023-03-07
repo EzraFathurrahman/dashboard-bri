@@ -15,7 +15,7 @@ class Index extends Component
     protected $rules = [
         'title' => 'required',
         'pic' => 'required',
-        'offline' =>'required',
+        'offline' => 'required',
         'is_tanggal' => 'required',
     ];
 
@@ -27,7 +27,7 @@ class Index extends Component
     public function tambahUser()
     {
         $this->validate();
-        
+
         switch ($this->is_tanggal) {
             case "0":
                 $this->waktu = Carbon::today()->format("Y-m-d");

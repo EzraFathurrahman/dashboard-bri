@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('menus.calendar');
+    return redirect('/calendar');
 });
 
 Route::get('/dashboard', function () {
@@ -32,6 +32,9 @@ Route::get('/documents', function () {
 Route::get('/reports', function () {
     return view('menus.reports');
 })->name('reports');
+Route::get('/utils', function () {
+    return view('menus.utils');
+})->name('utils');
 
 // Route::middleware([
 //     'auth:sanctum',

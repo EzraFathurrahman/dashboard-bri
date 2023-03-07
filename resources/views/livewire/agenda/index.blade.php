@@ -1,8 +1,13 @@
 @inject('carbon', 'Carbon\Carbon')
 <div class="flex justify-between gap-2 p-2">
-    <div>
+    <div class="text-xl font-bold">
         <h1>
-            {{ date('D,d M Y') }}
+            {{ date('Y') }}
+        </h1>
+    </div>
+    <div class="text-xl font-bold">
+        <h1>
+            {{ date('D,d M') }}
         </h1>
     </div>
     <div>
@@ -210,7 +215,7 @@
         function up() {
             setTimeout(function() {
                 scroll(0, down);
-            }, 7);
+            }, 5);
         }
 
         function down() {
