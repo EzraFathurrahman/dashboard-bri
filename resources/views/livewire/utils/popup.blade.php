@@ -93,10 +93,9 @@
                         <tbody class="divide-y divide-gray-200 bg-white">
                             @foreach ($files as $item)
                                 <tr>
-                                    <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                                    <td class="py-4 pl-4 pr-3 sm:pl-6">
                                         <img src="{{ asset('images/' . $item->filename) }}" alt=""
-                                            width="500">
+                                            style='height: 200px; width: auto;'>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         @if ($item->caption == '')
@@ -121,28 +120,3 @@
         </div>
     </div>
 </div>
-
-{{-- <input accept="image/*" type='file' id="imgInp" />
-<img id="blah" src="#" alt="your image" /> --}}
-<script>
-    $(document).ready(() => {
-        $('#imgUpload').change(function() {
-            const file = this.files[0];
-            if (file) {
-                let reader = new FileReader();
-                reader.onload = function(event) {
-                    $('#imgPreview').attr('src', event.target.result);
-                }
-                reader.readAsDataURL(file);
-            }
-        });
-    });
-
-
-    imgInp.onchange = evt => {
-        const [file] = imgInp.files
-        if (file) {
-            blah.src = URL.createObjectURL(file)
-        }
-    }
-</script>

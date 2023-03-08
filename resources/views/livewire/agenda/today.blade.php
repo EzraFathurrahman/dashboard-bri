@@ -1,16 +1,13 @@
 <div class="space-y-3 m-3 ">
 
-    <div class="grid grid-cols-6 space-x-1">
-        <div class="col-span-3 bg-[#219ebc] rounded-lg p-2 text-white text-xs place-items-center">
+    <div class="grid grid-cols-6 space-x-1 divide-x divide-gray-500">
+        <div class="col-span-4 p-2 ">
             Perihal
         </div>
-        <div class="bg-[#219ebc] rounded-lg p-2 text-xs text-white place-items-center">
-            Waktu
-        </div>
-        <div class="bg-[#219ebc] rounded-lg p-2 text-xs place-items-center text-white">
+        <div class="p-2  ">
             Tempat
         </div>
-        <div class="bg-[#219ebc] rounded-lg p-2 text-xs place-items-center text-white">
+        <div class="p-2  ">
             PIC
         </div>
     </div>
