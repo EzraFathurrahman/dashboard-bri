@@ -14,6 +14,7 @@ return new class extends Migration {
     {
         Schema::create('form_multiple_upload', function (Blueprint $table) {
             $table->id();
+            $table->string('caption')->nullable();
             $table->string('filename');
             $table->timestamps();
         });

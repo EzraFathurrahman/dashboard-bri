@@ -11,6 +11,7 @@ class FormMultipleUpload extends Model
 
     protected $fillable = [
         'filename',
+        'caption'
     ];
 
     public $table = 'form_multiple_upload';

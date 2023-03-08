@@ -8,12 +8,11 @@ use Livewire\WithFileUploads;
 
 class Popup extends Component
 {
-
     use WithFileUploads;
 
     public $imgFile;
     public $openModal = false;
-
+    public $caption = null;
     public function tambahPopup()
     {
         $this->validate([
@@ -24,10 +23,12 @@ class Popup extends Component
         $name = $this->imgFile->hashName();
         $imageName = FormMultipleUpload::create([
             'filename' => $name,
+            'caption' => $this->caption,
         ]);
         $this->imgFile->store('images');
-        // $this->imgFile->storeAs('images', $imageName);
         $this->openModal = false;
+        $this->reset();
+        return redirect()->to('utils');
     }
     public function render()
     {
